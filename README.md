@@ -152,5 +152,4 @@ $ bundle exec berks vendor cookbooks
 
 LICENSE AND AUTHORS
 ===================
-- Author: Salim Afiune (<afiune@chef.io>)
-- Author: Seth Chisamore (<schisamo@chef.io>)
+- Author: Scott Ford (<fords@chef.io>)

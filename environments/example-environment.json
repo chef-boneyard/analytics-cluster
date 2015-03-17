@@ -1,0 +1,26 @@
+{
+  "name": "starter-environment",
+  "description": "An example environment for a Chef Server and Chef Analytics",
+  "json_class": "Chef::Environment",
+  "chef_type": "environment",
+  "override_attributes": {
+    "analytics-cluster": {
+      "id": "example-environment",
+      "aws": {
+        "key_name": "some-valid-key",
+        "ssh_username": "root",
+        "image_id": "ami-validname",
+        "subnet_id": "your-subnet-id",
+        "security_group_ids": "your-security-group",
+        "use_private_ip_for_ssh": false
+      },
+      "chef-server": {
+        "flavor": "c3.xlarge",
+        "organization": "chefadmin"
+      },
+      "analytics": {
+        "flavor": "c3.xlarge"
+      }
+    }
+  }
+}
