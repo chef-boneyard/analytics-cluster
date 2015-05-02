@@ -44,6 +44,7 @@ ATTRIBUTES
 | `['analytics-cluster']['aws']['ssh_username']`       | SSH username to use to connect to machines. |
 | `['analytics-cluster']['aws']['image_id']`           | AWS AMI.                                    |
 | `['analytics-cluster']['aws']['flavor']`             | Size/flavor of your machine.                |
+| `['analytics-cluster']['aws']['subnet_id']`          | Subnet ID of your environment.              |
 | `['analytics-cluster']['aws']['security_group_ids']` | Security Group on AWS.                      |
 
 ### Chef Server Settings
@@ -124,7 +125,7 @@ $ cat environments/test.json
 #### Run chef-client on the local system (provisioning node)
 
 ```
-$ bundle exec chef-client -z -o analytics-cluster::setup -E test
+$ bundle exec chef-client -z -o analytics-cluster::setup_chef_server -E test
 ```
 
 Activate Analytics Server
