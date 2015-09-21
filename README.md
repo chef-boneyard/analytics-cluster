@@ -108,7 +108,7 @@ $ cat environments/test.json
         "subnet_id": "subnet-19ac017c",
         "security_group_ids": "sg-cbacf8ae",
         "use_private_ip_for_ssh": true
-      }
+      },
       "chef-server": {
         "flavor": "c3.xlarge",
         "organization": "my_organization"
